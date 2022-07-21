@@ -15,3 +15,7 @@ nc -lvnp 2222
 y en el payload donde se envía la reverse shell ponemos la IP donde no tenemos acceso directamente pero la maquina comprometida si, y el puerto ponemos el 1111, para redirigirlo al nuestro
 
 Si el payload tiene & se urlencodea a %26 para que no de problemas
+
+
+socat para ver output:
+socat TCP-LISTEN:7777 stdout
